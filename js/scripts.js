@@ -3,12 +3,13 @@ $(document).ready(function() {
     event.preventDefault();
     const nameInput = $("input#name").val();
     const ageInput = $("input#age").val();
-    //console.log(ageInput);
     const articleInput= $("#article").val(); 
+    const flavorInput= $("input:radio[name=flavor]:checked").val(); 
 
     $("#nameSpan").text(nameInput);
     $("#ageSpan").text(ageInput);
     $("#articleSpan").text(articleInput);
+    $("#flavorSpan").text(flavorInput);
 
   });
 });
