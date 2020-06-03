@@ -9,7 +9,20 @@
   </head>
   <body>
     <div class="container">
-    
+      <form id="survey">
+        <div class="form-group">
+          <label for="name">Enter you name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="age">Enter you age:</label>
+          <input id="age" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Good answers. Okay... Survey Says!</button>
+      </form>
+      <div class="outputSurvey">
+      <p>This is where some information will go. It looks like your name is <span id="nameSpan"></span> and your age is<span id="ageSpan"></p>
+      </div>
     </div>
   </body>
 </html>
